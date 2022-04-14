@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Id"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_below="@+id/edtId"/>
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:layout_below="@+id/edtName"/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddress"
+        android:text="Insert"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSelect"
+        android:layout_below="@+id/edtAddress"
+        android:layout_toRightOf="@+id/btnInsert"
+        android:text="Select"
+        android:layout_marginLeft="8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:layout_below="@+id/edtAddress"
+        android:layout_toRightOf="@+id/btnSelect"
+        android:layout_marginLeft="8dp"
+        android:text="Update"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:layout_below="@+id/edtAddress"
+        android:layout_toRightOf="@+id/btnUpdate"
+        android:layout_marginLeft="8dp"
+        android:text="Delete"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textData"
+        android:text="Data:"
+        android:layout_below="@+id/btnSelect"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/outputList"
+        android:layout_below="@+id/textData"/>
+
+</RelativeLayout>
